@@ -1,0 +1,11 @@
+@value colors: './colors.css';
+@value text-accents1 from colors;
+
+.container {
+  display: grid;
+  place-content: center;
+  text-align: center;
+  height: 240px;
+  color: text-accents1;
+  font-weight: 500;
+}

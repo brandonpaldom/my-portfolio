@@ -1,0 +1,51 @@
+@value colors: './colors.css';
+@value text-accents1, rounded-lg from colors;
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.info-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.organization-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.img-container {
+  width: 48px;
+  height: 48px;
+  position: relative;
+}
+
+.img {
+  border-radius: rounded-lg;
+}
+
+.title {
+  font-weight: 600;
+}
+
+.subtitle {
+  color: text-accents1;
+  font-size: 0.875rem;
+}
+
+.activities {
+  list-style-type: disc;
+  list-style-position: inside;
+}
+
+@media (min-width: 640px) {
+  .organization-container {
+    flex-direction: row;
+    gap: 1rem;
+  }
+}

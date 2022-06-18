@@ -1,0 +1,35 @@
+@value colors: './colors.css';
+@value text, accents1, accents2, primary, primary-hover, rounded-lg from colors;
+
+.container {
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  color: text;
+  font-weight: 600;
+  border-radius: rounded-lg;
+}
+
+.btn-primary {
+  background-color: primary;
+}
+
+.btn-primary:hover {
+  background-color: primary-hover;
+}
+
+.btn-secondary {
+  background-color: accents1;
+}
+
+.btn-secondary:hover {
+  background-color: accents2;
+}
+
+.btn-primary,
+.btn-primary:hover,
+.btn-secondary,
+.btn-secondary:hover {
+  transition-property: background-color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}

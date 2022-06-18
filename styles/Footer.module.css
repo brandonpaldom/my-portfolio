@@ -1,0 +1,15 @@
+@value colors: './colors.css';
+@value text-accents2 from colors;
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: text-accents2;
+}
+
+.link {
+  text-decoration: underline;
+  font-weight: 500;
+  color: text-accents2;
+}

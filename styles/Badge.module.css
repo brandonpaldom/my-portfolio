@@ -1,0 +1,19 @@
+@value colors: './colors.css';
+@value badge-text-blue, badge-bg-blue, badge-text-purple, badge-bg-purple, rounded-full from colors;
+
+.container {
+  padding: 0.25rem 0.5rem;
+  border-radius: rounded-full;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.blue {
+  color: badge-text-blue;
+  background-color: badge-bg-blue;
+}
+
+.purple {
+  color: badge-text-purple;
+  background-color: badge-bg-purple;
+}

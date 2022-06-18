@@ -1,0 +1,30 @@
+@value text: #FFFFFF;
+@value text-accents1: #737373;
+@value text-accents2: #404040;
+@value text-error: #ef4444;
+@value background: #171717;
+@value border: #262626;
+
+@value accents1: #262626;
+@value accents2: #404040;
+@value accents3: #525252;
+
+@value primary: #2563eb;
+@value primary-hover: #3b82f6;
+
+@value secondary: #9333ea;
+@value secondary-hover: #a855f7;
+
+@value badge-text-blue: #3b82f6;
+@value badge-bg-blue: rgba(59, 130, 246, 0.1);
+
+@value badge-text-purple: #a855f7;
+@value badge-bg-purple: rgba(168, 85, 247, 0.1);
+
+@value badge-text-amber: #f59e0b;
+@value badge-bg-amber: rgba(245, 158, 11, 0.1);
+
+@value badge-bg-error: rgba(239, 68, 68, 0.1);
+
+@value rounded-lg: 0.5rem;
+@value rounded-full: 9999px;

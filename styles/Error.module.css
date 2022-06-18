@@ -1,0 +1,11 @@
+@value colors: './colors.css';
+@value text-error from colors;
+
+.error-container {
+  display: grid;
+  place-content: center;
+  text-align: center;
+  height: 240px;
+  color: text-error;
+  font-weight: 500;
+}

@@ -1,0 +1,9 @@
+@value colors: './colors.css';
+@value background, border, rounded-lg from colors;
+
+.container {
+  padding: 1rem;
+  border: 1px solid border;
+  border-radius: rounded-lg;
+  background-color: background;
+}

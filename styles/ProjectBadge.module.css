@@ -1,0 +1,37 @@
+@value colors: './colors.css';
+@value badge-text-amber, badge-bg-amber, badge-text-blue, badge-bg-blue, badge-text-purple, badge-bg-purple, rounded-full from colors;
+
+.container {
+  padding: 0.375rem 0.75rem;
+  border-radius: rounded-full;
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  gap: 0.25rem;
+  align-items: center;
+}
+
+.icon-blue {
+  fill: badge-text-blue;
+}
+
+.icon-purple {
+  fill: badge-text-purple;
+}
+
+.amber {
+  color: badge-text-amber;
+  background-color: badge-bg-amber;
+}
+
+.blue {
+  color: badge-text-blue;
+  background-color: badge-bg-blue;
+}
+
+.purple {
+  color: badge-text-purple;
+  background-color: badge-bg-purple;
+}

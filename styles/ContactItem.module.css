@@ -1,0 +1,19 @@
+@value colors: './colors.css';
+@value border, accents1, rounded-full from colors;
+
+.item {
+  border: 1px solid border;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: rounded-full;
+}
+
+.item:hover {
+  background-color: accents1;
+  transition-property: background-color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}

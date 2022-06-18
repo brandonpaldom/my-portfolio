@@ -1,0 +1,36 @@
+@value colors: './colors.css';
+@value border, accents1, accents2, rounded-lg from colors;
+
+.container {
+  border: 1px solid border;
+  border-radius: rounded-lg;
+  text-decoration: none;
+  color: inherit;
+}
+
+.container:hover {
+  background-color: accents1;
+  transition-property: background-color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.img-container {
+  width: 100%;
+}
+
+.img {
+  border-top-left-radius: rounded-lg;
+  border-top-right-radius: rounded-lg;
+}
+
+.title {
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+}
+
+.title p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
