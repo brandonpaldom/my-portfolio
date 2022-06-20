@@ -6,12 +6,12 @@ export default function Resume({ data }) {
   return (
     <>
       <Head>
-        <title>Currículum | Portafolio</title>
+        <title>Currículum | Brandon Palmeros</title>
         <meta
           name="description"
           content="Hola, me dedico al diseño visual, marketing digital, desarrollo web, y actualmente estoy buscando una posición como desarrollador frontend jr."
         />
-        <meta property="og:title" content="Currículum | Portafolio" />
+        <meta property="og:title" content="Currículum | Brandon Palmeros" />
         <meta
           property="og:description"
           content="Hola, me dedico al diseño visual, marketing digital, desarrollo web, y actualmente estoy buscando una posición como desarrollador frontend jr."
