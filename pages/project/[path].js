@@ -149,19 +149,10 @@ export default function Home({ data }) {
   );
 }
 
-export async function getStaticPaths() {
-  const res = await fetch(`${process.env.API_URL}/api/projects`);
-  const data = await res.json();
-
-  const paths = data.map((project) => ({
-    params: { path: project.path },
-  }));
-
-  return { paths, fallback: false };
-}
-
-export async function getStaticProps({ params }) {
-  const res = await fetch(`${process.env.API_URL}/api/project/${params.path}`);
+export async function getServerSideProps(context) {
+  const res = await fetch(
+    `${process.env.API_URL}/api/project/${context.params.path}`
+  );
   const data = await res.json();
 
   return { props: { data } };
