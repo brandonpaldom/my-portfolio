@@ -80,7 +80,7 @@ export default function Resume({ data }) {
   );
 }
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   const res = await fetch(`${process.env.API_URL}/api/resume`);
   const data = await res.json();
 
